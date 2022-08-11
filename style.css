@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root{
-    --black: black;
+    --black: rgb(22, 21, 21);
     --white : #F0F0F0;
     --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -55,7 +55,9 @@ html::-webkit-scrollbar-thumb{
     font-weight: bolder;
 }
 #logo-span{
-    color: #FFD700;
+    /* color: #FFD700; */
+    /* color:  #964B00; */
+    color:  #3f000f;
 }
 
 .header .navbar a{
@@ -65,13 +67,14 @@ html::-webkit-scrollbar-thumb{
     font-weight: bold;
 }
 .header .navbar a:hover{
-    color: #FFD700;
+    color: #964B00;
     border-bottom: .1rem solid var(--black);
     padding-bottom: .4rem;
 }
 .header .icon i{
-    cursor:none;
-    opacity: 0;
+    font-size: 15px;
+    /* opacity: 0; */
+    padding: 15px;
 }
 
 .header .search{
@@ -79,7 +82,7 @@ html::-webkit-scrollbar-thumb{
     top: 100%;
     margin: 1.5rem 7%;
     background-color: transparent;
-    width: 50%;
+    /* width: 50%; */
     right: 0;
     height: 5rem;
     position:  absolute;
@@ -108,9 +111,11 @@ html::-webkit-scrollbar-thumb{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/back.png) no-repeat;
+    background: url(images/back.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 10;
+    z-index: -1;
 }
 .home .homeContent{
     width: 50%;
@@ -125,11 +130,14 @@ html::-webkit-scrollbar-thumb{
     line-height: 7rem;
     color: var(--black);
     text-shadow: var(--box-shadow);
+    /* z-index: -1; */
 }
 .home .homeContent p{
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2;
     margin-bottom: 2rem;
+    color: black;
+    font-weight: 500;
 }
 .home .homeContent .home-btn{
     height: 3rem;
@@ -337,8 +345,12 @@ section{
 
 .footer {
     background: url(images/backGround.png) no-repeat;
+    /* background-color: white; */
     background-size: cover;
     background-position: center center;
+}
+#logo-footer{
+    color:  #3f000f;
 }
 .footer .box-container{
     display: grid;
@@ -370,6 +382,7 @@ section{
     font-size: 1.6rem;
     color: var(--black);
     padding: 1rem 0;
+    text-transform: none;
 }
 .footer .box-container .box a i{
     padding-right: .5rem;
@@ -409,8 +422,6 @@ section{
 /* .box1{
     margin-left: 40px;
 } */
-
-/* thanks for watching my video  */
 
 
 
